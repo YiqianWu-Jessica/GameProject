@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/g3start"
+    tools:context=".game3.StartLevel3Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc_bold"
+        android:text="Treasure or trap?"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ring" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="HP + 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bomb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="HP - 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/crown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="Bonus + 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/diamond" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="Win"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F2F5A9"
+        android:fontFamily="@font/allan"
+        android:onClick="startGame"
+        android:text="@string/puzzle_main_start"
+        android:textSize="21sp" />
+
+</LinearLayout>

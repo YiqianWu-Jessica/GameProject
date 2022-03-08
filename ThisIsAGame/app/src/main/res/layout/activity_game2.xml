@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".game2.Game2Activity"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fcdae1">
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="114dp"
+            android:layout_height="40dp"
+            android:paddingLeft="18dp"
+            android:text="Score:  0"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/hpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="18dp"
+            android:text="HP:  0"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bonusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="300dp"
+            android:text="bonus:  0"
+            android:textSize="20dp" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameTop"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@drawable/seabackground">
+
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Click here to start"
+            android:textSize="30dp"
+            android:onClick="clickStart"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/boat"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/boat" />
+
+        <ImageView
+            android:id="@+id/shark"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/shark" />
+
+
+        <ImageView
+            android:id="@+id/fish"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fish" />
+
+
+        <ImageView
+            android:id="@+id/jelly"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jelly" />
+
+
+        <ImageView
+            android:id="@+id/starfish"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/starfish" />
+
+        <ImageView
+            android:id="@+id/treabox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/treabox" />
+
+
+    </FrameLayout>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            android:id="@+id/upBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="UP"
+            android:onClick="clickUp"/>
+
+        <Button
+            android:id="@+id/leftBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="LEFT"
+            android:onClick="clickLeft" />
+
+
+        <Button
+            android:id="@+id/rightBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="RIGHT"
+            android:onClick="clickRight"/>
+
+
+        <Button
+            android:id="@+id/downBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="DOWN"
+            android:onClick="clickDown"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="Pause"
+            android:onClick="clickPause" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="bonus:"-->
+        <!--            android:layout_row="1"-->
+        <!--            android:layout_column="1"-->
+        <!--            android:textColor="#F90404"-->
+        <!--            android:textSize="15dp"/>-->
+
+    </GridLayout>
+
+
+</LinearLayout>

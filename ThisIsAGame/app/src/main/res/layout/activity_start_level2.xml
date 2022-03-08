@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game2.StartLevel2Activity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/g2start">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Happy Fisher"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/starfish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="HP + 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/shark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="HP - 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/jelly" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="Bonus + 1"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="Score + 20"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/treabox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="20dp"
+                android:text="Win"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/allan"
+        android:backgroundTint="#f4d8cd"
+        android:onClick="startGame"
+        android:text="@string/puzzle_main_start"
+        android:textSize="21sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".login.LoginActivity"
+    android:background="@drawable/login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:text="LOG IN"
+        android:textSize="32sp"
+        android:textColor="#FFE87C"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_gravity="center"
+        android:autofillHints="@string/prompt_email"
+        android:hint="@string/prompt_email"
+        android:selectAllOnFocus="true"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_gravity="center"
+        android:autofillHints="@string/prompt_password"
+        android:hint="@string/prompt_password"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:text="@string/action_sign_in"
+        android:onClick="signIn"
+        android:fontFamily="normal"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="createAccount"
+        android:text="@string/action_register"
+        android:fontFamily="normal"/>
+
+</LinearLayout>

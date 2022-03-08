@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".score.ScoreBoardActivity"
+    android:background="@drawable/scorebackbround">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:fontFamily="cursive"
+        android:text="Scoreboard"
+        android:textColor="#020202"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/scoreRank"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#EBEBEB"
+            android:fontFamily="@font/allan"
+            android:onClick="displayScoreRank"
+            android:text="Score"
+            android:textSize="21sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/hpRank"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#EBEBEB"
+            android:fontFamily="@font/allan"
+            android:onClick="displayHPRank"
+            android:text="HP"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/bonusRank"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#EBEBEB"
+            android:fontFamily="@font/allan"
+            android:onClick="displayBonusRank"
+            android:text="Bonus"
+            android:textSize="21sp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/rankview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="normal"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#EBEBEB"
+        android:fontFamily="@font/allan"
+        android:onClick="navigateToLogin"
+        android:text="Back to Login Page"
+        android:textSize="21sp" />
+
+
+</LinearLayout>

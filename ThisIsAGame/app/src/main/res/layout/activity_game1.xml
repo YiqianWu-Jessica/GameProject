@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".game1.Game1Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fcdae1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scoreLabel1"
+            android:layout_width="114dp"
+            android:layout_height="40dp"
+            android:paddingLeft="18dp"
+            android:text="Score:  0"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/hpLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="18dp"
+            android:text="HP:  0"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bonusLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="300dp"
+            android:text="bonus:  0"
+            android:textSize="20dp" />
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/g1Jelly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/jelly" />
+
+        <ImageView
+            android:id="@+id/g1Turtle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/turtle" />
+
+        <ImageView
+            android:id="@+id/g1Fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fish" />
+
+        <ImageView
+            android:id="@+id/g1QuestionMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/question" />
+
+        <ImageView
+            android:id="@+id/g1Bomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bomb" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:text="Enter the name of the item in the picture" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="Enter a word here" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="checkAnswer"
+        android:text="Check" />
+
+
+
+
+</LinearLayout>

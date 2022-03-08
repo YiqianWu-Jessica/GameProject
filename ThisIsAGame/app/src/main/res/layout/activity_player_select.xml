@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.PlayerSelectActivity">
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="normal"
+        android:onClick="pickPlayer1"
+        android:text="Empty"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/player2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="normal"
+        android:onClick="pickPlayer2"
+        android:text="Empty"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/player3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="normal"
+        android:onClick="pickPlayer3"
+        android:text="Empty"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedplayer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="#F8E29E"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="startGame"
+        android:text="Start Game!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/playername"
+        android:layout_width="243dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="normal"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/allan"
+        android:text="CREATE a new player here"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/playername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/allan"
+        android:text="Or SELECT an existing player below"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/player1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="normal"
+        android:text="No Player selected"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="540dp"
+        android:backgroundTint="#9CC8EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="selectPlayer"
+        android:text="create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#EEA19B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="removePlayer1"
+        android:text="remove"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#EEA19B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="removePlayer2"
+        android:text="remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#EEA19B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="removePlayer3"
+        android:text="remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
